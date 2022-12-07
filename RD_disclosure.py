@@ -1,6 +1,7 @@
 import os,sys,re,time
 from nltk import tokenize
-# rd_disc - the number of R&D-related sentences in the 10-K (after cleaning HTML tags, content between XBRL tags, and special characters beginning with "\&" from Raw file of 10-K)
+# We first clean 10-K by following Professor Bill McDonald to exclude markup tags, ASCII-encoded graphics, XBRL content, and tables
+# rd_disc - the number of R&D-related sentences in the 10-K
 # rd_discfls - the number of forward looking R&D-related sentences in the 10-K
 # rd_discnum - the number of future-looking R&D-related sentences with numerical information in the 10-K
 if __name__=="__main__":
